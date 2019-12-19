@@ -1,0 +1,312 @@
+<ion-header>
+  <ion-toolbar color="success">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title ion-title class="ion-text-left">
+        Liga Santander
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+<!--     <ion-item>
+      {{matchData.success}}
+    </ion-item>
+    <ion-item>
+        {{matchData && matchData.data ? matchData.data.match : null}}
+    </ion-item> -->
+    <ion-title  ion-title class="ion-text-center ion-padding">
+      En vivo
+    </ion-title>
+    <ion-item *ngFor="let user of matchDatalive && matchDatalive.data ? matchDatalive.data.match : null">
+        <ion-icon name="notifications" item-left></ion-icon>
+      
+          <ion-label class="ion-text-center">
+            {{ user.home_name }}
+            {{ user.score }}
+            {{ user.away_name }}
+            {{ user.time }}'
+          </ion-label>
+
+      <ion-icon name="notifications" item-rigth></ion-icon>
+    </ion-item>
+    <ion-title  ion-title class="ion-text-center ion-padding">
+      Jornada 16
+    </ion-title>
+    <ion-item *ngFor="let user of matchData15 && matchData15.data ? matchData15.data.match : null">
+        <ion-icon name="notifications" item-left></ion-icon>
+      
+          <ion-label class="ion-text-center">
+            {{ user.home_name }}
+            {{ user.score }}
+            {{ user.away_name }}
+            {{ user.time }}'
+          </ion-label>
+
+      <ion-icon name="notifications" item-rigth></ion-icon>
+    </ion-item>
+    <ion-title  ion-title class="ion-text-center ion-padding">
+      Jornada 15
+    </ion-title>
+    <ion-item *ngFor="let user of matchData14 && matchData14.data ? matchData14.data.match : null">
+        <ion-icon name="notifications" item-left></ion-icon>
+      
+          <ion-label class="ion-text-center">
+            {{ user.home_name }}
+            {{ user.score }}
+            {{ user.away_name }}
+            {{ user.time }}'
+          </ion-label>
+
+      <ion-icon name="notifications" item-rigth></ion-icon>
+    </ion-item>
+    <ion-title ion-title class="ion-text-center ion-padding">
+      Jornada 14
+    </ion-title>
+    <ion-item *ngFor="let user of matchData && matchData.data ? matchData.data.match : null">
+    
+        <ion-icon name="notifications" item-left></ion-icon>
+      
+          <ion-label class="ion-text-center">
+            {{ user.home_name }}
+            {{ user.score }}
+            {{ user.away_name }}
+            {{ user.time }}'
+          </ion-label>
+
+      <ion-icon name="notifications" item-rigth></ion-icon>
+
+    </ion-item>
+    <ion-title ion-title class="ion-text-center ion-padding">
+      Jornada 13
+    </ion-title>
+    <ion-item *ngFor="let user of matchData1 && matchData1.data ? matchData1.data.match : null">
+
+        <ion-icon name="notifications" item-left></ion-icon>
+      
+          <ion-label class="ion-text-center">
+            {{ user.home_name }}
+            {{ user.score }}
+            {{ user.away_name }}
+            {{ user.time }}'
+          </ion-label>
+
+      <ion-icon name="notifications" item-rigth></ion-icon>
+
+    </ion-item>
+    <ion-title ion-title class="ion-text-center ion-padding">
+      Jornada 12
+    </ion-title>
+    <ion-item *ngFor="let user of matchData2 && matchData2.data ? matchData2.data.match : null">
+
+        <ion-icon name="notifications" item-left></ion-icon>
+      
+          <ion-label class="ion-text-center">
+            {{ user.home_name }}
+            {{ user.score }}
+            {{ user.away_name }}
+            {{ user.time }}'
+          </ion-label>
+
+      <ion-icon name="notifications" item-rigth></ion-icon>
+
+    </ion-item>
+    <ion-title ion-title class="ion-text-center ion-padding">
+      Jornada 11
+    </ion-title>
+    <ion-item *ngFor="let user of matchData3 && matchData3.data ? matchData3.data.match : null">
+
+        <ion-icon name="notifications" item-left></ion-icon>
+      
+          <ion-label class="ion-text-center">
+            {{ user.home_name }}
+            {{ user.score }}
+            {{ user.away_name }}
+            {{ user.time }}'
+          </ion-label>
+
+      <ion-icon name="notifications" item-rigth></ion-icon>
+
+    </ion-item>
+    <ion-title ion-title class="ion-text-center ion-padding">
+      Jornada 10
+    </ion-title>
+    <ion-item *ngFor="let user of matchData4 && matchData4.data ? matchData4.data.match : null">
+
+        <ion-icon name="notifications" item-left></ion-icon>
+      
+          <ion-label class="ion-text-center">
+            {{ user.home_name }}
+            {{ user.score }}
+            {{ user.away_name }}
+            {{ user.time }}'
+          </ion-label>
+
+      <ion-icon name="notifications" item-rigth></ion-icon>
+
+    </ion-item>
+    <ion-title ion-title class="ion-text-center ion-padding">
+      Jornada 09
+    </ion-title>
+    <ion-item *ngFor="let user of matchData5 && matchData5.data ? matchData5.data.match : null">
+
+        <ion-icon name="notifications" item-left></ion-icon>
+      
+          <ion-label class="ion-text-center">
+            {{ user.home_name }}
+            {{ user.score }}
+            {{ user.away_name }}
+            {{ user.time }}'
+          </ion-label>
+
+      <ion-icon name="notifications" item-rigth></ion-icon>
+
+    </ion-item>
+    <ion-title ion-title class="ion-text-center ion-padding">
+      Jornada 08
+    </ion-title>
+    <ion-item *ngFor="let user of matchData6 && matchData6.data ? matchData6.data.match : null">
+
+        <ion-icon name="notifications" item-left></ion-icon>
+      
+          <ion-label class="ion-text-center">
+            {{ user.home_name }}
+            {{ user.score }}
+            {{ user.away_name }}
+            {{ user.time }}'
+          </ion-label>
+
+      <ion-icon name="notifications" item-rigth></ion-icon>
+
+    </ion-item>
+    <ion-title ion-title class="ion-text-center ion-padding">
+      Jornada 07
+    </ion-title>
+    <ion-item *ngFor="let user of matchData7 && matchData7.data ? matchData7.data.match : null">
+
+        <ion-icon name="notifications" item-left></ion-icon>
+      
+          <ion-label class="ion-text-center">
+            {{ user.home_name }}
+            {{ user.score }}
+            {{ user.away_name }}
+            {{ user.time }}'
+          </ion-label>
+
+      <ion-icon name="notifications" item-rigth></ion-icon>
+
+    </ion-item>
+    <ion-title ion-title class="ion-text-center ion-padding">
+      Jornada 06
+    </ion-title>
+    <ion-item *ngFor="let user of matchData8 && matchData8.data ? matchData8.data.match : null">
+
+        <ion-icon name="notifications" item-left></ion-icon>
+      
+          <ion-label class="ion-text-center">
+            {{ user.home_name }}
+            {{ user.score }}
+            {{ user.away_name }}
+            {{ user.time }}'
+          </ion-label>
+
+      <ion-icon name="notifications" item-rigth></ion-icon>
+
+    </ion-item>
+    <ion-title ion-title class="ion-text-center ion-padding">
+      Jornada 05
+    </ion-title>
+    <ion-item *ngFor="let user of matchData9 && matchData9.data ? matchData9.data.match : null">
+
+        <ion-icon name="notifications" item-left></ion-icon>
+      
+          <ion-label class="ion-text-center">
+            {{ user.home_name }}
+            {{ user.score }}
+            {{ user.away_name }}
+            {{ user.time }}'
+          </ion-label>
+
+      <ion-icon name="notifications" item-rigth></ion-icon>
+
+    </ion-item>
+    <ion-title ion-title class="ion-text-center ion-padding">
+      Jornada 04
+    </ion-title>
+    <ion-item *ngFor="let user of matchData10 && matchData10.data ? matchData10.data.match : null">
+
+        <ion-icon name="notifications" item-left></ion-icon>
+      
+          <ion-label class="ion-text-center">
+            {{ user.home_name }}
+            {{ user.score }}
+            {{ user.away_name }}
+            {{ user.time }}'
+          </ion-label>
+
+      <ion-icon name="notifications" item-rigth></ion-icon>
+
+    </ion-item>
+    <ion-title ion-title class="ion-text-center ion-padding">
+      Jornada 03
+    </ion-title>
+    <ion-item *ngFor="let user of matchData11 && matchData11.data ? matchData11.data.match : null">
+
+        <ion-icon name="notifications" item-left></ion-icon>
+      
+          <ion-label class="ion-text-center">
+            {{ user.home_name }}
+            {{ user.score }}
+            {{ user.away_name }}
+            {{ user.time }}'
+          </ion-label>
+
+      <ion-icon name="notifications" item-rigth></ion-icon>
+
+    </ion-item>
+    <ion-title ion-title class="ion-text-center ion-padding">
+      Jornada 02
+    </ion-title>
+    <ion-item *ngFor="let user of matchData12 && matchData12.data ? matchData12.data.match : null">
+
+        <ion-icon name="notifications" item-left></ion-icon>
+      
+          <ion-label class="ion-text-center">
+            {{ user.home_name }}
+            {{ user.score }}
+            {{ user.away_name }}
+            {{ user.time }}'
+          </ion-label>
+
+      <ion-icon name="notifications" item-rigth></ion-icon>
+
+    </ion-item>
+    <ion-title ion-title class="ion-text-center ion-padding">
+      Jornada 01
+    </ion-title>
+    <ion-item *ngFor="let user of matchData13 && matchData13.data ? matchData13.data.match : null">
+
+        <ion-icon name="notifications" item-left></ion-icon>
+      
+          <ion-label class="ion-text-center">
+            {{ user.home_name }}
+            {{ user.score }}
+            {{ user.away_name }}
+            {{ user.time }}'
+          </ion-label>
+
+      <ion-icon name="notifications" item-rigth></ion-icon>
+
+    </ion-item>
+
+
+
+  </ion-list>
+  <!--
+    <div *ngIf="selectedItem" padding>
+      You navigated here from <b>{{selectedItem.title }}</b>
+    </div>
+  -->
+</ion-content>

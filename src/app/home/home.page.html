@@ -1,0 +1,57 @@
+<ion-header>
+  <ion-toolbar color="success">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      Iniciar sesión
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <form #form="ngForm">
+    <ion-grid>
+      <ion-row color="success" class="ion-justify-content-center">
+        <ion-col class="ion-align-self-center" size-md="6" size-lg="5" size-xs="12">
+          <div class="ion-text-center">
+            <h3>Tu cuenta</h3>
+          </div>
+          <div class="ion-padding">
+            <ion-item>
+              <ion-label position="floating">Usuario</ion-label>
+              <ion-input name="user" type="text" [(ngModel)]="email" ngModel required></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-label position="floating">Contraseña</ion-label>
+              <ion-input name="password" type="password" [(ngModel)]="password" ngModel required></ion-input>
+            </ion-item>
+          </div>
+          <div class="ion-padding">
+            <ion-button color="success" size="large" type="submit" [disabled]="form.invalid" (click)="onSubmitLogin()" expand="block">Continuar</ion-button>
+          </div>
+          <div  class="ion-padding" class="ion-text-right">
+            <ion-checkbox  name="remember" class="reme"></ion-checkbox>
+            <ion-label> Recordar</ion-label>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </form>
+  
+<!--   <ion-button (click)="getRequest()">
+    get
+  </ion-button> -->
+
+<!--   {{ requestObject.data }} -->
+<!-- 
+  {{ requestObject.data }}
+
+  <p *ngIf="requestObject">{{requestObject.data}}</p> -->
+
+<!--   {{requestObject && requestObject.data ? requestObject.data.match : null}} -->
+<!--   {{ ((requestObject || {}).data || {}).match }} -->
+
+
+</ion-content>
+
